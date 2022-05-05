@@ -1,4 +1,13 @@
+/* GLOBAL STYLES */
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+:root {
+  /* brand colors from logo */
+  --clr-primary: #26c6ff;
+  --clr-secondary: #fc8373;
+  --clr-tertiary: #fd66fd;
+}
 
 * {
   margin: 0;
@@ -6,6 +15,42 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: "Nunito", sans-serif;
+}
+
+.container {
+  /*global container class to add padding on X axis*/
+  padding: 0 20px;
+}
+
+/* HEADER STYLES */
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fff;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1rem;
+}
+
+.profileInfo img {
+  width: 50px;
+  border-radius: 50%;
 }
