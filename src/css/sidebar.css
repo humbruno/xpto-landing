@@ -1,0 +1,27 @@
+/* SIDEBAR STYLES */
+
+.sidebar {
+  position: fixed;
+  top: 110px;
+  right: 0;
+  height: 100vh;
+  width: 78px;
+  background-color: var(--clr-secondary);
+  padding: 6px 14px;
+  transition: all 150ms ease-in-out;
+}
+
+.sidebar.active {
+  width: 240px;
+}
+
+.hamburgerMenu {
+  position: absolute;
+  background-color: var(--clr-primary);
+  color: var(--txt-primary);
+  right: 0;
+  top: 6px;
+  font-size: 1.275rem;
+  text-align: center;
+  transform: translateX(-50%);
+}

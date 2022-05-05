@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/sidebar.css" />
   </head>
   <body>
     <header class="container">
@@ -20,8 +22,20 @@
       </div>
     </header>
 
-    <nav></nav>
+    <nav class="sidebar">
+      <button class="hamburgerMenu">Menu</button>
+      <ul class="nav__list">
+        <li><a href="#" class="nav__list-item">First Nav</a></li>
+        <li><a href="#" class="nav__list-item">Second Nav</a></li>
+        <li><a href="#" class="nav__list-item">Third Nav</a></li>
+      </ul>
+    </nav>
 
-    <script src="src/js/script.js" />
+    <main>
+      <h1>Content Placeholder</h1>
+    </main>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/sidebar.js"></script>
   </body>
 </html>
