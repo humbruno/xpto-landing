@@ -62,6 +62,7 @@
 
 .nav__list li {
   display: none;
+  user-select: none;
 
   font-size: 1.25rem;
   letter-spacing: 2px;

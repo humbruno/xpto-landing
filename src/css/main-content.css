@@ -1,0 +1,58 @@
+main {
+  text-align: center;
+
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.content__title {
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+
+  margin: 10px 0;
+}
+
+.content__description {
+  max-width: 100ch;
+  margin: 0 auto;
+
+  font-size: 1.15rem;
+}
+
+.user__list,
+.user__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.user__list li {
+  font-size: 1.25rem;
+
+  background-color: rgb(255, 212, 212);
+  padding: 6px 20px;
+  border-radius: 12px;
+
+  transition: all 150ms ease-in-out;
+}
+
+.user__list li:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.user__details {
+  margin-top: 20px;
+}
+
+.user__details li {
+  font-size: 1.25rem;
+  background-color: var(--clr-secondary);
+  color: var(--txt-primary);
+  padding: 6px 20px;
+  border-radius: 12px;
+}
