@@ -24,3 +24,9 @@ header {
   width: 50px;
   border-radius: 50%;
 }
+
+.profileInfo strong {
+  background-color: var(--clr-primary);
+  padding: 0 10px;
+  border-radius: 12px;
+}

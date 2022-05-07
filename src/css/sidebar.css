@@ -4,24 +4,74 @@
   position: fixed;
   top: 110px;
   right: 0;
+
   height: 100vh;
-  width: 78px;
+  width: 50px;
+
   background-color: var(--clr-secondary);
+
   padding: 6px 14px;
+  border-top-left-radius: 8px;
+
   transition: all 150ms ease-in-out;
 }
 
 .sidebar.active {
-  width: 240px;
+  width: 160px;
 }
 
 .hamburgerMenu {
   position: absolute;
-  background-color: var(--clr-primary);
-  color: var(--txt-primary);
-  right: 0;
+  left: 8px;
   top: 6px;
+
   font-size: 1.275rem;
   text-align: center;
-  transform: translateX(-50%);
+
+  background-color: transparent;
+}
+
+.hamburgerMenu span {
+  display: block;
+  width: 33px;
+  height: 4px;
+
+  margin-bottom: 5px;
+  border-radius: 3px;
+
+  background-color: var(--txt-primary);
+
+  transition: all 150ms ease-in-out;
+}
+
+.hamburgerMenu:hover {
+  cursor: pointer;
+}
+
+.hamburgerMenu:hover span {
+  transform: scale(1.2);
+}
+
+.nav__list {
+  padding: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav__list li {
+  display: none;
+
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.nav__list li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sidebar.active .nav__list li {
+  display: block;
 }
