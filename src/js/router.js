@@ -4,6 +4,24 @@ const winners = document.querySelector(".nav__item-winners");
 
 const title = document.querySelector(".content__title");
 const content = document.querySelector(".content__description");
+const userDetails = document.querySelector(".user__details");
+const userList = document.querySelector(".user__list");
+
+String.prototype.capitalize = function () {
+  return this.charAt(0).toUpperCase() + this.slice(1);
+};
+
+const makeUsers = (users) => {
+  for (let user of users) {
+    const li = document.createElement("LI");
+    li.innerHTML = user.name.firstname.capitalize();
+    userList.append(li);
+
+    li.addEventListener("click", () => {
+      userDetails.innerHTML = user.email;
+    });
+  }
+};
 
 const fetchData = async (param) => {
   try {
@@ -16,6 +34,7 @@ const fetchData = async (param) => {
     }
 
     const data = await response.json();
+    content.innerHTML = "";
     return data;
   } catch (error) {
     console.log(error);
@@ -32,18 +51,20 @@ about.addEventListener("click", (event) => {
 
 users.addEventListener("click", async (event) => {
   event.preventDefault();
+  userList.innerHTML = "";
 
   const users = await fetchData("?limit=5");
 
   title.innerHTML = "All competitors";
-  content.innerHTML = users.map((user) => user.name.firstname);
+  makeUsers(users);
 });
 
 winners.addEventListener("click", async (event) => {
   event.preventDefault();
+  userList.innerHTML = "";
 
   const users = await fetchData("?limit=3");
 
   title.innerHTML = "Competition winners";
-  content.innerHTML = users.map((user) => user.name.firstname);
+  makeUsers(users);
 });
