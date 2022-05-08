@@ -28,4 +28,4 @@ Dummy landing page for XPTO Competition. Single-page Application created with va
 
 ## 🔌 Live Website Link
 
-- [Live Website](https://weather.brunosantos.dev/)
+- [Live Website](https://xpto.brunosantos.dev/)
