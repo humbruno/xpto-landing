@@ -1,9 +1,35 @@
 main {
+  background-color: var(--txt-primary);
   text-align: center;
+
+  border-radius: 12px;
+
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 h1 {
   font-size: 3rem;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+h1::before {
+  content: "";
+  background: var(--clr-secondary);
+  position: absolute;
+  left: -3%;
+  bottom: 16px;
+  height: 8px;
+  width: 106%;
+  z-index: -1;
+  border-radius: 35px;
 }
 
 .content__title {
@@ -13,13 +39,6 @@ h1 {
   margin: 10px 0;
 }
 
-.content__description {
-  max-width: 100ch;
-  margin: 0 auto;
-
-  font-size: 1.15rem;
-}
-
 .user__list,
 .user__details {
   display: flex;
@@ -27,10 +46,13 @@ h1 {
   align-items: center;
   gap: 10px;
 }
+
 .user__list li {
   font-size: 1.25rem;
 
-  background-color: rgb(255, 212, 212);
+  background-color: var(--clr-tertiary);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
   padding: 6px 20px;
   border-radius: 12px;
 
@@ -48,8 +70,10 @@ h1 {
 
 .user__details li {
   font-size: 1.25rem;
-  background-color: var(--clr-secondary);
+
+  background-color: var(--clr-primary);
   color: var(--txt-primary);
+
   padding: 6px 20px;
   border-radius: 12px;
 }

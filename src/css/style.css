@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
 :root {
-  /* brand colors from logo */
-  --clr-primary: #26c6ff;
-  --clr-secondary: #fc8373;
+  --clr-primary: #202142;
+  --clr-secondary: rgba(226, 91, 136, 0.8);
+  --clr-tertiary: #dee2e6;
 
   --txt-primary: #fff;
   --txt-secondary: #000;
@@ -38,10 +38,9 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #f8f9fa;
+  background-color: var(--clr-primary);
 }
 
 .container {
-  /*global container class to add padding on X axis*/
-  padding: 0 20px;
+  padding: 10px 20px 0 20px;
 }

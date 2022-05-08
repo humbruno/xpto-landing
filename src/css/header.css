@@ -3,6 +3,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -24,7 +25,9 @@ header {
 }
 
 .profileInfo strong {
-  background-color: var(--clr-primary);
+  background-color: rgba(226, 91, 136, 0.8);
+  color: white;
   padding: 0 10px;
   border-radius: 12px;
+  font-weight: 400;
 }
