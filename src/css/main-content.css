@@ -1,5 +1,6 @@
 main {
-  background-color: var(--txt-primary);
+  background-color: var(--bg-card);
+  color: var(--txt-primary);
   text-align: center;
 
   border-radius: 12px;
@@ -51,6 +52,7 @@ h1::before {
   font-size: 1.25rem;
 
   background-color: var(--clr-tertiary);
+  color: var(--txt-secondary);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   padding: 6px 20px;
@@ -71,7 +73,7 @@ h1::before {
 .user__details li {
   font-size: 1.25rem;
 
-  background-color: var(--clr-primary);
+  background-color: var(--clr-secondary);
   color: var(--txt-primary);
 
   padding: 6px 20px;

@@ -25,8 +25,8 @@ header {
 }
 
 .profileInfo strong {
-  background-color: rgba(226, 91, 136, 0.8);
-  color: white;
+  background-color: var(--clr-secondary);
+  color: var(--txt-primary);
   padding: 0 10px;
   border-radius: 12px;
   font-weight: 400;
